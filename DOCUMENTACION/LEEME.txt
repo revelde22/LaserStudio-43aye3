@@ -1,0 +1,23 @@
+43AYE3 LASER STUDIO G2 V1 - RELIEVE 5 + HELP / AYUDA
+Revisión 01/10/2026
+
+01_Manual_Completo_43AYE3.pdf: 21 páginas, editor completo y operación.
+02_Flujos_Ilustrados_43AYE3.pdf: 10 páginas, ocho procedimientos.
+03_Programacion_API_43AYE3.pdf: 38 páginas, código y API nativa.
+
+Dentro del programa: Help / Ayuda. F1 abre el manual.
+Los PDF se abren con el lector predeterminado de Windows.
+
+Ejemplos offline, ejecutar desde la raíz del proyecto:
+work\.venv\Scripts\python.exe DOCUMENTACION\ejemplos\demo_trabajo.py
+work\.venv\Scripts\python.exe DOCUMENTACION\ejemplos\demo_mapa_mm.py
+work\.venv\Scripts\python.exe DOCUMENTACION\ejemplos\demo_relieve_artistico.py
+
+Los ejemplos no envían marcado a la máquina.
+Las capturas Qt son reales; mapas sintéticos y captura del usuario
+están identificados. Las profundidades exportadas son objetivos,
+no medidas físicas verificadas.
+
+Marcado con sesión única: el arranque verifica la versión del ejecutable
+y recompila si hace falta. Requiere Visual Studio Build Tools C++ x86/x64.
+Las pruebas de cola usan un doble de dispositivo, no la G2 física.

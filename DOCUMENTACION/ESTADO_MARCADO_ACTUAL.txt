@@ -1,0 +1,67 @@
+43AYE3 LASER - RECUPERACION FLUX.2 KLEIN 4B FP8 / ESPANOL / CONTADOR / ETA
+Revisión: 01-10-2026
+
+BASE REAL
+43AYE3_COMPLETO_SDXL_ESPANOL_CONTADOR.zip (01/10/2026 01:26 UTC).
+Esta entrega conserva el código de esa revisión y añade ETA/barra,
+diagnóstico ampliado, errores de calibración detallados y documentación actual.
+
+ACTUALIZAR SIN REDESCARGAR
+Cierra Laser Studio. Extrae 43AYE3_ACTUALIZACION_RECUPERADA.zip en la raíz
+de tu proyecto, donde están work y ARRANCAR_43AYE3.bat. Reemplaza los archivos.
+El parche no contiene AI_RUNTIME, .venv, modelos, imágenes ni biblioteca personal.
+Inicia ARRANCAR_43AYE3.bat desde la raíz. No uses un BAT de otra carpeta.
+
+PROYECTO COMPLETO
+Extrae 43AYE3_LASER_COMPLETO_RECUPERADO.zip. Incluye Python Windows portátil,
+fuentes SDK, runtime de proveedor G2, código y tres PDF con imágenes y ejemplos.
+Los modelos Klein 4B FP8, Qwen3, VAE FLUX.2 y OPUS-MT se descargan en la primera preparación.
+Los binarios propios del SDK no están compilados: el BAT usa Visual Studio
+Build Tools C++ x86/x64 en Windows. Esta revisión no cambia fuentes nativas.
+Para conservar modelos al cambiar de carpeta, combina work/AI_RUNTIME del
+proyecto anterior; conserva AI_DESIGNS, DEPTH_MAPS, biblioteca y proyectos.
+Los entornos pueden reconstruirse si cambia la ruta; los pesos se conservan.
+
+INCLUIDO
+- FLUX.2 Klein 4B destilado FP8 local; 4 pasos, 768 px o 512 px.
+- Codificador Qwen3 y VAE en CPU, lowvram y reserva 1 GB para Windows.
+- Prompt español con traductor local a inglés; modelos SDXL previos conservados.
+- Referencia por imagen, acabado vectorizable/grises, formato redondo.
+- Mapas GPU con respaldo CPU, relieve artístico y profundidad objetivo en mm.
+- Plumas, Fill, materiales editables, tallado imagen/vector y limpieza final.
+- Preparación rápida cancelable y contador de pasadas confirmadas por SDK.
+- NUEVO: tiempo transcurrido, restante y hora final aproximada, barra de bloques.
+- NUEVO: aviso de calibración enumera los valores guardados y actuales.
+- NUEVO: referencia latón 1000 mm/s, 70%, 30 kHz (Gweike G2);
+  10 pasadas y 0,02 mm son propuesta editable para medir muestra.
+- NUEVO: tres PDF revisados en Help/Ayuda, F1 y ejemplos offline.
+
+ESTADO REAL DEL MARCADO
+Sigue el envío compatible --mark-vector-design por bloque. La sesión única
+anterior se retiró después del fallo comunicado y no se reactiva aquí.
+No se conoce todavía la causa física de «NO MARCA». No puede comprobarse
+sin el resultado de tu G2. Compilar o recibir CALL_OK no demuestra emisión.
+Si el fallo continúa, RECOPILAR_MARCADO.bat crea DIAGNOSTICO_MARCADO.zip
+sin mover ni disparar la máquina. Los registros permitirán identificar la causa.
+La fluidez física y Klein/OPUS-MT reales quedan pendientes de prueba Windows/G2.
+
+TIEMPO Y PROFUNDIDAD
+ETA inicial = longitud marcada / velocidad por las pasadas. Se ajusta con
+la duración real de bloques devueltos por SDK; incluye limpieza. Es aproximada.
+La barra no avanza por una pasada parcial, ni cuenta STOP/error como finalización.
+Los mm son objetivo desde una muestra medida; no son medición automática por IA.
+Si cambias pluma/intervalo, restaura los valores o mide otra muestra y aplica
+la nueva calibración en Tallado imagen. No aceptes la calibración antigua
+como si la hubieras medido con los nuevos ajustes.
+
+DOCUMENTACION
+Los PDF empiezan con la revisión vigente, seguida de la referencia completa
+anterior. La primera parte prevalece para IA, marcado, ETA y referencia latón.
+RECUPERACION_REQUISITOS.md detalla alcance y comprobaciones.
+
+PERFIL 8 GB
+Los 3 archivos de Klein suman unos 12,45 GB de disco (no VRAM).
+Qwen3 necesita RAM del sistema. El perfil descarga componentes a CPU/RAM;
+no garantiza consumo exacto ni velocidad hasta probar en la RTX 5060.
+ComfyUI gestionado se actualiza para incorporar los nodos nativos Klein.
+Si CUDA agota memoria, selecciona 512 px y cierra otras aplicaciones GPU.
