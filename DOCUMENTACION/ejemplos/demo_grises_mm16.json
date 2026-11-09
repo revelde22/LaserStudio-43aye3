@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "kind": "desired_depth_not_measurement",
+  "unit": "mm",
+  "target_max_mm": 0.2,
+  "formula": "depth_mm = pixel_uint16 / 65535 * target_max_mm",
+  "zero_pixel": 0,
+  "max_pixel": 65535,
+  "calibration": {
+    "measured_mm": 0.1,
+    "passes": 10,
+    "mm_per_pass": 0.01,
+    "estimated_max_passes": 20,
+    "method": "linear_user_coupon"
+  }
+}
